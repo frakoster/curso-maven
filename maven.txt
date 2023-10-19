@@ -1,0 +1,61 @@
+ciclo de vida en maven 
+	default
+	clean
+	Site
+
+Default life cycle Phases:
+		Validate	
+		Compile
+		Test
+		Package
+		Integration-test
+		Verify
+		Install
+		Deploy
+		pre-clean
+		clean : remove files creadosen el proyecto
+		post clean
+
+
+
+{
+Crear Proyecto web basico con maven
+	groupId:	com.mycompany
+	artifactId:	mywebapp
+	version:	1.0-SNAPSHOT
+	package:	com.mycompany.webapp	
+
+
+	mvn archetype:generate \
+	-DarchetypeGroupId=org.apache.maven.archetypes \
+	-DarchetypeArtifactId=maven-archetype-webapp
+
+
+Revisar:
+	maven y jetty web container
+	
+	<plugins>
+		<plugin>	
+			<groupId>
+				org.eclipse.jetty
+			<groupId>
+			<artifactId>
+				jetty-maven-plugin
+			<artifactId>
+			<version>
+				9.3.0.M2
+			<version>
+			<configuration>
+				<scanIntervalSeconds>
+					10
+				<scanIntervalSeconds>
+			<configuration>
+		<plugin>
+	<plugins>
+}
+
+
+comandos: 
+mvn clean
+mvn compile
+maven package
