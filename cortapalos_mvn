@@ -37,22 +37,14 @@ Revisar:
 	maven y jetty web container
 	
 	<plugins>
-		<plugin>	
-			<groupId>
-				org.eclipse.jetty
-			<groupId>
-			<artifactId>
-				jetty-maven-plugin
-			<artifactId>
-			<version>
-				9.3.0.M2
-			<version>
+				<plugin>	
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-maven-plugin</artifactId>
+			<version>9.3.0.M2</version>
 			<configuration>
-				<scanIntervalSeconds>
-					10
-				<scanIntervalSeconds>
-			<configuration>
-		<plugin>
+				<scanIntervalSeconds>10</scanIntervalSeconds>
+			</configuration>
+		</plugin>
 	<plugins>
 }
     	<build>
